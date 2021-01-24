@@ -1,3 +1,21 @@
+Install Docker Steps on Windows Edge : 
+
+Download Docker Desktop from Dockerhub
+Run this installer
+WSL2 update need to be installed :
+  - Step 4 - Download the Linux kernel update package
+Run this package 
+Step 5 - Set WSL 2 as your default version
+  wsl --set-default-version 2
+Start Docker Desktop :
+   issue : Docker is starting message stuck
+   Stop Docker Desktop
+   Run below this command 
+     wsl --unregister docker-desktop
+     wsl --unregister docker-desktop-data
+   Start Docker Desktop
+
+
 # Docker Crash Course for Java Developers
 
 [![Image](https://www.springboottutorial.com/images/Course-DockerCrashCourseForJavaSpringBootDevelopers.png "Docker Crash Course for Java Spring Boot Developers")](https://www.udemy.com/course/docker-course-with-java-and-spring-boot-for-beginners/)
